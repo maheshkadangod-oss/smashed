@@ -142,7 +142,7 @@
 html{background:var(--ink);color:var(--cream);-webkit-font-smoothing:antialiased}
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
-body{font-family:var(--body);background:var(--ink);overflow-x:hidden;line-height:1.5}
+body{font-family:var(--body);background:var(--ink);overflow-x:hidden;overflow-x:clip;line-height:1.5}
 img,video,canvas{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 ::selection{background:var(--cheese);color:var(--ink)}
@@ -515,6 +515,34 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
   .ftext .h-xl{font-size:68px}
   .ftext .lead{display:none}
   .fchap{margin-top:16px;padding-top:14px;min-height:0}
+
+  /* shorter scroll distances on phones: same effects, less thumb work */
+  #process{height:440vh}
+  #fries{height:170vh}
+  #anatomy{height:230vh}
+
+  .hero-title .wordmark{font-size:12.5vw}
+  .hero-title p{font-size:14px;padding:0 8px}
+
+  /* anatomy labels move inside the frame as compact tags */
+  .awrap{width:94vw}
+  .tag-l{gap:0}
+  .tag-l i,.tag-l span{display:none}
+  .tag-l.l{right:auto;left:0}
+  .tag-l.r{left:auto;right:0}
+  .tag-l > div{background:rgba(1,1,1,.72);padding:6px 10px;border-radius:8px;border:1px solid rgba(245,181,42,.35)}
+  .tag-l b{font-size:15px}
+  .ahead{top:76px}
+  .ahead .h-xl,.atail .h-xl{font-size:44px}
+  .atail{bottom:32px}
+
+  /* reel: smaller cards and words so each one fits the screen as it passes */
+  .rclip figure{height:min(50vh,440px)}
+  .rclip .word{font-size:64px}
+  .rclip:nth-of-type(even) .word{-webkit-text-stroke:1.5px var(--cheese)}
+  .rclip .cap p{font-size:13px;max-width:22ch}
+  .rintro,.routro{width:84vw}
+  .track{gap:44px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
@@ -985,7 +1013,12 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
     }));
   }
   addEventListener("scroll", onScroll, { passive: true });
-  addEventListener("resize", size);
+  // on phones the address bar sliding in and out fires resize with only the height changing;
+  // rebuilding then clears canvases and shifts section heights mid-scroll, so only react to width
+  const touch = matchMedia("(pointer: coarse)").matches;
+  let lastW = innerWidth;
+  const widthChanged = () => { if (touch && innerWidth === lastW) return false; lastW = innerWidth; return true; };
+  addEventListener("resize", () => { if (widthChanged()) size(); });
   size(); onScroll();
 
   /* ---------- reveals + lazy video ---------- */
@@ -1282,10 +1315,14 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
   let lastY = scrollY;
   function tick(t) {
     if (lenis) lenis.raf(t);
-    const vel = lenis ? lenis.velocity : scrollY - lastY; lastY = scrollY;
+    const vel = lenis ? lenis.velocity : scrollY - lastY;
+    // phones don't always fire scroll events during touch and momentum scrolling,
+    // so the loop checks the position itself every frame
+    if (scrollY !== lastY) onScroll();
+    lastY = scrollY;
     if (cursorTick) cursorTick();
 
-    if (!reduce && inView(sec)) embers(vel);
+    if (!reduce && !touch && inView(sec)) embers(vel);
 
     if (inView(fSec)) {
       loadF();
@@ -1371,8 +1408,9 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
     });
   }
 
+  let layoutW = innerWidth;
   function layout() { sizeEmbers(); buildFries(); sizeF(); buildDrip(); sizeReel(); sizeX(); }
-  addEventListener("resize", layout);
+  addEventListener("resize", () => { if (innerWidth !== layoutW || !touch) { layoutW = innerWidth; layout(); } });
   layout();
   // the track width depends on the display font, so measure again once fonts are in
   document.fonts && document.fonts.ready.then(sizeReel);
