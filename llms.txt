@@ -1,0 +1,31 @@
+# Smashed Burgers & Co.
+
+> Smash burger restaurant in Kaloor, Kochi, Kerala, India. Beef patties are smashed to order on a flat-top griddle. Fries are cooked in beef tallow. Open every day from 6 PM to 4 AM. Delivery through Zomato.
+
+## Facts
+
+- Name: Smashed Burgers & Co. (also written Smashed Burgers Co.)
+- Address: 64/5257 G, Kathrikadavu, Kaloor Kadavanthra Road, Kaloor, Kochi, Kerala, India
+- Hours: every day, 6 PM to 4 AM
+- Delivery: Zomato, listed as "Smashed Burgers & Co, Kaloor"
+- Average cost: about ₹500 for two people, per Zomato
+- Instagram: @smashedburgersandco
+- Tagline: "Obsession doesn't take days off"
+
+## Menu
+
+- Animal Smash: two smashed beef patties, signature animal sauce, double melted cheese, crisp lettuce. A take on the California double animal style.
+- OG Smash Classic: one smashed beef patty, cheddar, house sauce. Also comes as a Double.
+- Jammin' Bacon: smashed beef with smoky beef bacon.
+- The Alchemy: smashed beef, melted cheese, caramelised onions, signature sauce.
+- Smashed Beef Mushroom, Tokyo: smashed beef, melted cheese, grilled mushrooms, house special sauce.
+- Nashville Fried Chicken Burger: crispy fried chicken, Nashville hot spice, pickles, house sauce.
+- Tallow Fries: fat-cut fries cooked in beef tallow. Also available loaded with cheese sauce and smashed beef.
+- Value meals pair burgers with tallow fries.
+
+## Links
+
+- [Website](https://smashed-burgers-co.vercel.app/)
+- [Order on Zomato](https://www.zomato.com/kochi/smashed-burgers-co-kaloor/order)
+- [Instagram](https://www.instagram.com/smashedburgersandco/)
+- [Directions](https://www.google.com/maps/search/?api=1&query=Smashed+Burgers+%26+Co+Kathrikadavu+Kaloor+Kochi)
