@@ -205,10 +205,10 @@ h1,h2,h3{font-weight:400}
 .hero-title .scroll-cue span{display:inline-block;animation:cue 1.6s ease-in-out infinite}
 @keyframes cue{50%{transform:translateY(6px)}}
 
-.chapter{position:absolute;left:var(--gut);top:50%;transform:translateY(-50%);width:min(30vw,380px);opacity:0;transition:opacity .4s}
+.chapter{position:absolute;left:var(--gut);top:50%;transform:translateY(-50%);width:min(380px,calc(50vw - 30vh - var(--gut) - 24px));opacity:0;transition:opacity .4s}
 .chapter.show{opacity:1}
 .chapter .mono{color:var(--cheese)}
-.chapter h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(56px,7vw,110px);line-height:.88;margin:14px 0 18px}
+.chapter h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(48px,min(7vw,11vh),110px);line-height:.88;margin:14px 0 18px}
 .chapter h2 .w{display:inline-block;transform:translateY(105%);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
 .chapter h2 .clip{display:inline-block;overflow:hidden;vertical-align:top}
 .chapter.show h2 .w{transform:none}
@@ -274,9 +274,11 @@ section{position:relative}
 .card.fries .pic{margin:8px -24px -24px;min-height:260px;overflow:hidden}
 .card.fries .copy{position:relative;z-index:2}
 
-.more{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:clamp(28px,4vw,48px);padding:24px 28px;border:1px solid var(--line);border-radius:20px}
-.more span:not(.mono){font-family:var(--display);text-transform:uppercase;font-size:24px}
-.more .btn{margin-left:auto}
+/* sits in the grid next to the fries card, so the last row is full */
+.more{grid-column:span 8;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px;
+  padding:clamp(28px,4vw,48px);border:1px solid var(--line);border-radius:20px;background:var(--ink-2)}
+.more span:not(.mono){font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,3vw,44px);line-height:1}
+.more .btn{margin-top:14px}
 
 /* build */
 .build{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;align-items:stretch;background:var(--wine)}
@@ -311,7 +313,7 @@ section{position:relative}
 .info{display:grid;gap:0;border-top:1px solid var(--line);margin-top:40px}
 .info div{display:flex;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
 .info dt{color:var(--muted)}
-.info dd{text-align:right;font-weight:500}
+.info dd{text-align:right;font-weight:500;min-width:0;overflow-wrap:anywhere}
 .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
 
 /* footer */
@@ -374,26 +376,26 @@ footer .base{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 /* ---------- anatomy: the burger comes apart as you scroll ---------- */
 #anatomy{position:relative;height:340vh;background:#010101}
 .astage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:grid;place-items:center}
-.awrap{position:relative;width:min(84vh,92vw);aspect-ratio:1}
+.awrap{position:relative;width:min(78vh,92vw);aspect-ratio:1;margin-top:3vh}
 #xseq{width:100%;height:100%}
 /* the source clip crops the top bun at peak; fade the top edge into the black */
 .awrap::before{content:"";position:absolute;left:0;right:0;top:0;height:18%;z-index:1;background:linear-gradient(#010101,transparent)}
-.ahead{position:absolute;top:96px;left:var(--gut);z-index:3;transition:opacity .5s}
+.ahead{position:absolute;top:50%;left:var(--gut);transform:translateY(-50%);z-index:3;transition:opacity .5s;max-width:calc(50vw - 39vh - var(--gut) - 16px)}
 .ahead .h-xl{font-size:clamp(48px,6vw,96px)}
 .atail{position:absolute;bottom:56px;left:0;right:0;text-align:center;z-index:3;opacity:0;transition:opacity .6s}
 .atail.show{opacity:1}
 .atail .h-xl{font-size:clamp(48px,6vw,96px)}
-.tag-l{position:absolute;z-index:2;display:flex;align-items:center;gap:12px;opacity:0;transform:translateY(10px);transition:opacity .5s, transform .5s cubic-bezier(.2,.8,.2,1);white-space:nowrap}
-.tag-l.show{opacity:1;transform:none}
+.tag-l{position:absolute;z-index:2;display:flex;align-items:center;gap:12px;opacity:0;transform:translate(0,calc(-50% + 10px));transition:opacity .5s, transform .5s cubic-bezier(.2,.8,.2,1);white-space:nowrap}
+.tag-l.show{opacity:1;transform:translate(0,-50%)}
 .tag-l i{display:block;width:clamp(30px,6vw,110px);height:1px;background:var(--cheese);transform:scaleX(0);transition:transform .6s .1s cubic-bezier(.2,.8,.2,1)}
 .tag-l.show i{transform:scaleX(1)}
-.tag-l.l{right:84%;flex-direction:row}
-.tag-l.l i{transform-origin:right}
-.tag-l.r{left:84%}
-.tag-l.r i{transform-origin:left}
+
+
+
+.tag-l i{transform-origin:left}
 .tag-l b{display:block;font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(20px,2vw,30px);line-height:1}
 .tag-l span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-.tag-l.l > div{text-align:right}
+
 
 /* ---------- the reel: sideways scroll through real clips ---------- */
 #reel{position:relative;background:var(--ink)}
@@ -474,7 +476,7 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
 /* ---------- responsive ---------- */
 @media (max-width:1000px){
   .nav ul{display:none}
-  .card,.card.feature{grid-column:span 12}
+  .card,.card.feature,.more{grid-column:span 12}
   .card.feature{flex-direction:column;min-height:auto}
   .card.feature .media{height:420px;flex:none}
   .build{grid-template-columns:1fr}
@@ -483,13 +485,31 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
   .counter ol{display:none}
 }
 @media (min-width:641px) and (max-width:1000px){
-  .card:not(.feature){grid-column:span 6}
+  .card:not(.feature),.more{grid-column:span 6}
 }
 @media (max-width:760px){
   .status{display:none}
   .nav{padding:14px var(--gut)}
   .nav .wordmark{font-size:24px}
   .btn{padding:11px 16px}
+  .specs{grid-template-columns:1fr 1fr 1fr}
+  .specs b{font-size:30px}
+  .night .stack{height:560px}
+  .info dd{max-width:60%}
+  .more .btn{width:100%;justify-content:center}
+  .lb-meta{flex-direction:column;align-items:center;gap:6px}
+  .lightbar::after{width:28vw}
+  /* reel: smaller cards and words so each one fits the screen as it passes */
+  .rclip figure{height:min(50vh,440px)}
+  .rclip .word{font-size:64px}
+  .rclip:nth-of-type(even) .word{-webkit-text-stroke:1.5px var(--cheese)}
+  .rclip .cap p{font-size:13px;max-width:22ch}
+  .rintro,.routro{width:84vw}
+  .track{gap:44px}
+}
+/* pinned sections (smash, fries, anatomy) switch to the full-bleed layout on phones
+   and on portrait tablets, where the side-by-side desktop layout is too narrow */
+@media (max-width:760px), (orientation:portrait) and (max-width:1100px){
   /* sequence goes full-bleed on phones */
   .panel{left:0;top:0;transform:none;width:100%;height:100%;border-radius:0;aspect-ratio:auto;box-shadow:none}
   #bgseq{display:none}
@@ -500,13 +520,6 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
   .counter .num{font-size:72px}
   .counter .of{display:none}
   .progress{bottom:24px}
-  .specs{grid-template-columns:1fr 1fr 1fr}
-  .specs b{font-size:30px}
-  .night .stack{height:560px}
-  .info dd{max-width:60%}
-  .more .btn{margin-left:0;width:100%;justify-content:center}
-  .lb-meta{flex-direction:column;align-items:center;gap:6px}
-  .lightbar::after{width:28vw}
   /* fries footage goes full-bleed on phones, text sits over a fade at the bottom */
   .fgrid{display:block;padding:0}
   .fpanel{position:absolute;inset:0;height:auto;aspect-ratio:auto;border-radius:0;box-shadow:none}
@@ -525,24 +538,32 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
   .hero-title p{font-size:14px;padding:0 8px}
 
   /* anatomy labels move inside the frame as compact tags */
-  .awrap{width:94vw}
-  .tag-l{gap:0}
+  .awrap{width:94vw;margin-top:8vh}
+  .tag-l{gap:0;left:auto!important;right:0}
   .tag-l i,.tag-l span{display:none}
-  .tag-l.l{right:auto;left:0}
-  .tag-l.r{left:auto;right:0}
   .tag-l > div{background:rgba(1,1,1,.72);padding:6px 10px;border-radius:8px;border:1px solid rgba(245,181,42,.35)}
   .tag-l b{font-size:15px}
-  .ahead{top:76px}
+  .ahead{top:76px;transform:none;max-width:none}
   .ahead .h-xl,.atail .h-xl{font-size:44px}
   .atail{bottom:32px}
 
-  /* reel: smaller cards and words so each one fits the screen as it passes */
-  .rclip figure{height:min(50vh,440px)}
-  .rclip .word{font-size:64px}
-  .rclip:nth-of-type(even) .word{-webkit-text-stroke:1.5px var(--cheese)}
-  .rclip .cap p{font-size:13px;max-width:22ch}
-  .rintro,.routro{width:84vw}
-  .track{gap:44px}
+}
+/* short landscape screens (phones on their side): compact type so pinned text fits the height */
+@media (orientation:landscape) and (max-height:500px){
+  .chapter h2{font-size:44px;margin:8px 0}
+  .chapter p{display:none}
+  .counter .num{font-size:64px}
+  .counter .of{display:none}
+  .ftext .h-xl{font-size:44px}
+  .ftext .lead{display:none}
+  .fchap{margin-top:12px;padding-top:10px;min-height:0}
+  .fchap p{font-size:15px}
+  .awrap{width:min(64vh,92vw);margin-top:12vh}
+  .ahead .h-xl,.atail .h-xl{font-size:40px}
+  .tag-l b{font-size:18px}
+  .tag-l span{display:none}
+  .lightbar{padding-top:70px;padding-bottom:70px}
+  .lb-word{font-size:16vw}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
@@ -709,12 +730,11 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
           </div>
           <div class="pic"><img src="assets/img/fries.jpg" alt="Tallow fries in a kraft box at the night market" loading="lazy"></div>
         </article>
-      </div>
-
-      <div class="more reveal">
+        <div class="more reveal">
         <span class="mono" style="color:var(--cheese)">// Also on the menu</span>
         <span>OG Smash Double</span><span>Beef Mushroom, Tokyo</span><span>Signature Loaded Fries</span><span>Value meals with tallow fries</span>
         <a class="btn" href="https://www.zomato.com/kochi/smashed-burgers-co-kaloor/order" target="_blank" rel="noopener">Order on Zomato ↗</a>
+        </div>
       </div>
     </div>
   </section>
@@ -728,11 +748,12 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
       </div>
       <div class="awrap">
         <canvas id="xseq" role="img" aria-label="A double smash burger separating into its layers"></canvas>
-        <div class="tag-l l" style="top:5%"><div><b>Toasted bun</b><span>Soft inside, crisp on the cut side</span></div><i></i></div>
-        <div class="tag-l r" style="top:26%"><i></i><div><b>Patty one</b><span>Smashed thin, lacy edges, cheese on</span></div></div>
-        <div class="tag-l l" style="top:48%"><div><b>Patty two</b><span>Because one was never enough</span></div><i></i></div>
-        <div class="tag-l r" style="top:69%"><i></i><div><b>Sauce + lettuce</b><span>House sauce, crisp leaves</span></div></div>
-        <div class="tag-l l" style="top:87%"><div><b>The base</b><span>Griddle-toasted, holds it all</span></div><i></i></div>
+        <!-- top = centre of each layer, left = just past its right edge, both measured from the frames -->
+        <div class="tag-l" style="top:9%;left:83%"><i></i><div><b>Toasted bun</b><span>Soft inside, crisp on the cut side</span></div></div>
+        <div class="tag-l" style="top:29%;left:84%"><i></i><div><b>Patty one</b><span>Smashed thin, lacy edges, cheese on</span></div></div>
+        <div class="tag-l" style="top:51%;left:84%"><i></i><div><b>Patty two</b><span>Because one was never enough</span></div></div>
+        <div class="tag-l" style="top:71%;left:84%"><i></i><div><b>Sauce + lettuce</b><span>House sauce, crisp leaves</span></div></div>
+        <div class="tag-l" style="top:90%;left:80%"><i></i><div><b>The base</b><span>Griddle-toasted, holds it all</span></div></div>
       </div>
       <div class="atail" id="atail"><h2 class="h-xl">Same order.<br>Every time.</h2></div>
     </div>
@@ -871,6 +892,16 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
   const FRAMES = 168;
   const src = i => `assets/seq/f${String(i + 1).padStart(3, "0")}.jpg`;
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // older Safari (< 16.4) and Firefox (< 128) can't animate a CSS variable, so the light
+  // in the opening SMASHED would sit still off-screen; move it from script there instead
+  if (!reduce && !(window.CSS && CSS.registerProperty)) {
+    const lb = document.querySelector(".lightbar"), t0 = performance.now();
+    setInterval(() => {
+      const k = ((performance.now() - t0) % 4800) / 4800, e = k < .7 ? .5 - Math.cos(Math.PI * k / .7) / 2 : 1;
+      lb.style.setProperty("--beam", (-30 + 160 * e).toFixed(1) + "%");
+    }, 33);
+  }
 
   // chapters: [start fraction, label, title, copy]
   const CH = [
@@ -1302,7 +1333,7 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
   function anatomy(p) {
     const f = p < .55 ? p / .55 : p < .78 ? 1 : 1 - (p - .78) / .22;
     drawX(Math.round(f * (XN - 1)));
-    const labels = p > .42 && p < .82;
+    const labels = p > .5 && p < .8;
     xtags.forEach((t, k) => { t.style.transitionDelay = labels ? k * 90 + "ms" : "0ms"; t.classList.toggle("show", labels); });
     ahead.style.opacity = p > .86 ? 0 : 1;
     atail.classList.toggle("show", p > .9);
