@@ -1,13 +1,13 @@
 # Smashed Burgers & Co.
 
 Website for Smashed Burgers & Co., Kaloor Kadavanthra Road, Kochi.
-Live: https://smashed-burgers-co.vercel.app
+Live: https://smashed-zeta.vercel.app
 
 Plain static site. No build step, no framework, no npm install.
 
 ## Deploy on Vercel
 
-1. Vercel → the `smashed-burgers-co` project → Settings → Git → connect `maheshkadangod-oss/smashed`
+1. Vercel project `smashed` (team maheshkadangod-1675s-projects) is connected to `maheshkadangod-oss/smashed`. Its public address is https://smashed-zeta.vercel.app
 2. Settings → Build & Development:
    - Framework Preset: **Other**
    - Build Command: leave empty

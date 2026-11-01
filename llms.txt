@@ -25,7 +25,7 @@
 
 ## Links
 
-- [Website](https://smashed-burgers-co.vercel.app/)
+- [Website](https://smashed-zeta.vercel.app/)
 - [Order on Zomato](https://www.zomato.com/kochi/smashed-burgers-co-kaloor/order)
 - [Instagram](https://www.instagram.com/smashedburgersandco/)
 - [Directions](https://www.google.com/maps/search/?api=1&query=Smashed+Burgers+%26+Co+Kathrikadavu+Kaloor+Kochi)
