@@ -1,0 +1,30 @@
+{
+  "_readme": "Menu settings shared by the live menu (index.html) and the nightly sync (scripts/sync_menu.py). Prices, items, bestsellers and stock come from their SmashPOS menu at menu.smashed.in. Their system has no descriptions, so add them here, keyed by the item name in lower case.",
+  "api": "https://vivid-gopher-215.convex.cloud",
+  "pagePath": "smashed",
+  "fullCategories": ["Starters", "Classic Burgers", "Sandos"],
+  "categoryNames": {
+    "Classic Burgers": "Classic burgers",
+    "Imported Drinks": "Imported sodas",
+    "Drinks": "Soft drinks and water",
+    "Add On": "Dips"
+  },
+  "categoryNotes": {
+    "Classic Burgers": "Price shown is the double.",
+    "Imported Drinks": "Tonight's stock.",
+    "Kombucha": "Tonight's stock.",
+    "Drinks": "Tonight's stock."
+  },
+  "extrasTitle": "Add to any burger",
+  "descriptions": {
+    "tallow fries": "Fat-cut fries cooked in beef tallow, finished with salt and crushed pepper.",
+    "signature beef loaded fries": "Fries under cheese sauce and smashed beef.",
+    "og smash": "Smashed beef, caramelised, with melted cheddar, house sauce and pickles in a toasted brioche bun.",
+    "animal smash": "Two smashed patties, signature animal sauce, double melted cheese and crisp lettuce. A take on the California double animal style.",
+    "the alchemy": "Smashed patties in signature sauce, melted cheese and caramelised onions. Sweet and tangy.",
+    "tokyo": "Smashed patties, melted cheese and mushrooms sautéed in house Tokyo sauce.",
+    "jammin' bacon": "Smashed patties under smoky beef bacon jam, with cheese, pickles, lettuce and house sauces.",
+    "ranch reserve": "Smashed patties with beef bacon bits, crunchy onion rings and signature ranch sauce.",
+    "nashville hot chicken sando": "Fried chicken thigh in Nashville hot spice, crunchy pickles and house sauce on a toasted bun."
+  }
+}

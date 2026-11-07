@@ -35,26 +35,41 @@
       "name": "Smashed Burgers & Co.",
       "alternateName": "Smashed Burgers Co.",
       "slogan": "Obsession doesn't take days off",
+      "telephone": "+91-7907894764",
       "description": "Smash burger joint in Kaloor, Kochi. Beef patties smashed to order on a flat-top griddle, beef tallow fries, open late every night.",
       "url": "https://smashed-zeta.vercel.app/",
       "image": "https://smashed-zeta.vercel.app/assets/img/og.jpg",
-      "servesCuisine": ["Burgers", "American", "Fast Food"],
+      "servesCuisine": [
+        "Burgers",
+        "American",
+        "Fast Food"
+      ],
       "priceRange": "₹₹",
       "acceptsReservations": false,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "64/5257 G, Kathrikadavu, Kaloor Kadavanthra Road",
+        "streetAddress": "Fes & Fred Eco Space, Thammanam-Pullepady Road, Kathrikadavu, Kaloor",
         "addressLocality": "Kochi",
         "addressRegion": "Kerala",
         "addressCountry": "IN"
       },
       "hasMap": "https://www.google.com/maps/search/?api=1&query=Smashed+Burgers+%26+Co+Kathrikadavu+Kaloor+Kochi",
-      "openingHoursSpecification": [{
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "18:00",
-        "closes": "04:00"
-      }],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "18:00",
+          "closes": "04:00"
+        }
+      ],
       "potentialAction": {
         "@type": "OrderAction",
         "target": "https://www.zomato.com/kochi/smashed-burgers-co-kaloor/order"
@@ -78,7 +93,26 @@
                 "description": "Fat-cut fries cooked in beef tallow, finished with salt and crushed pepper.",
                 "offers": {
                   "@type": "Offer",
-                  "price": "200",
+                  "price": "199",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Signature Beef Loaded Fries",
+                "description": "Fries under cheese sauce and smashed beef.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "279",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Cheese Loaded",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "239",
                   "priceCurrency": "INR"
                 }
               }
@@ -86,22 +120,96 @@
           },
           {
             "@type": "MenuSection",
-            "name": "House special burgers",
+            "name": "Classic burgers",
             "hasMenuItem": [
               {
                 "@type": "MenuItem",
                 "name": "OG Smash",
-                "description": "One smashed beef patty, caramelised, with melted cheddar, house sauce and pickles in a toasted brioche bun.",
+                "description": "Smashed beef, caramelised, with melted cheddar, house sauce and pickles in a toasted brioche bun.",
                 "offers": {
                   "@type": "Offer",
-                  "price": "179",
+                  "price": "299",
                   "priceCurrency": "INR"
                 }
               },
               {
                 "@type": "MenuItem",
                 "name": "The Alchemy",
-                "description": "Two smashed patties in signature sauce, melted cheese and caramelised onions. Sweet and tangy.",
+                "description": "Smashed patties in signature sauce, melted cheese and caramelised onions. Sweet and tangy.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "369",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Tokyo",
+                "description": "Smashed patties, melted cheese and mushrooms sautéed in house Tokyo sauce.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "419",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Jammin’ Bacon",
+                "description": "Smashed patties under smoky beef bacon jam, with cheese, pickles, lettuce and house sauces.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "429",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Animal Smash",
+                "description": "Two smashed patties, signature animal sauce, double melted cheese and crisp lettuce. A take on the California double animal style.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "349",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Ranch Reserve",
+                "description": "Smashed patties with beef bacon bits, crunchy onion rings and signature ranch sauce.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "529",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Double Smoke",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "449",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Double Bacon Cheese Burger",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "499",
+                  "priceCurrency": "INR"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Sandos",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Nashville Hot Chicken Sando",
+                "description": "Fried chicken thigh in Nashville hot spice, crunchy pickles and house sauce on a toasted bun.",
                 "offers": {
                   "@type": "Offer",
                   "price": "329",
@@ -110,62 +218,10 @@
               },
               {
                 "@type": "MenuItem",
-                "name": "Max Gains",
-                "description": "Two smashed patties, a sunny-side-up egg and a cool, tangy yoghurt sauce. The high-protein one.",
+                "name": "Patty Melt",
                 "offers": {
                   "@type": "Offer",
-                  "price": "349",
-                  "priceCurrency": "INR"
-                }
-              },
-              {
-                "@type": "MenuItem",
-                "name": "Jammin' Bacon",
-                "description": "Two smashed patties under smoky beef bacon jam, with cheese, pickles, lettuce and house sauces.",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "349",
-                  "priceCurrency": "INR"
-                }
-              },
-              {
-                "@type": "MenuItem",
-                "name": "Tokyo",
-                "description": "Two smashed patties, melted cheese and mushrooms sautéed in house Tokyo sauce.",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "399",
-                  "priceCurrency": "INR"
-                }
-              },
-              {
-                "@type": "MenuItem",
-                "name": "Ranch Reserve",
-                "description": "Two smashed patties with beef bacon bits, crunchy onion rings and signature ranch sauce.",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "450",
-                  "priceCurrency": "INR"
-                }
-              },
-              {
-                "@type": "MenuItem",
-                "name": "Animal Smash",
-                "description": "Two smashed beef patties, signature animal sauce, double melted cheese and crisp lettuce. A take on the California double animal style."
-              }
-            ]
-          },
-          {
-            "@type": "MenuSection",
-            "name": "Chicken sandos",
-            "hasMenuItem": [
-              {
-                "@type": "MenuItem",
-                "name": "Nashville Hot Chicken Sando",
-                "description": "Fried chicken thigh in Nashville hot spice, crunchy pickles and house sauce on a toasted bun.",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "249",
+                  "price": "550",
                   "priceCurrency": "INR"
                 }
               }
@@ -173,20 +229,164 @@
           },
           {
             "@type": "MenuSection",
-            "name": "Add-ons",
+            "name": "Imported sodas",
             "hasMenuItem": [
               {
                 "@type": "MenuItem",
-                "name": "Smashed patty",
+                "name": "Pepsi",
                 "offers": {
                   "@type": "Offer",
-                  "price": "80",
+                  "price": "150",
                   "priceCurrency": "INR"
                 }
               },
               {
                 "@type": "MenuItem",
-                "name": "Sunny-side egg",
+                "name": "Coca Cola",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "150",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Mirinda Citrus",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "195",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Pepsi Max",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "195",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "7Up",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "150",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Fanta Orange",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "195",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Monster mango loco",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "195",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Fanta fruit twist",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "195",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Mirinda Cream soda",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "195",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Mirinda Orange",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "195",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Fanta strawberry and kiwi",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "195",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Coca cola light",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "150",
+                  "priceCurrency": "INR"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Soft drinks and water",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Mineral Water",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "20",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Mineral Water Small",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "10",
+                  "priceCurrency": "INR"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Dips",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Ranch Dip",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "25",
+                  "priceCurrency": "INR"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Add to any burger",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Cheese",
                 "offers": {
                   "@type": "Offer",
                   "price": "25",
@@ -195,10 +395,10 @@
               },
               {
                 "@type": "MenuItem",
-                "name": "Cheese slice",
+                "name": "Sautéed Mushrooms",
                 "offers": {
                   "@type": "Offer",
-                  "price": "15",
+                  "price": "50",
                   "priceCurrency": "INR"
                 }
               },
@@ -210,34 +410,10 @@
                   "price": "15",
                   "priceCurrency": "INR"
                 }
-              }
-            ]
-          },
-          {
-            "@type": "MenuSection",
-            "name": "Mocktails",
-            "hasMenuItem": [
-              {
-                "@type": "MenuItem",
-                "name": "Green Apple",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "120",
-                  "priceCurrency": "INR"
-                }
               },
               {
                 "@type": "MenuItem",
-                "name": "Citrus Surge",
-                "offers": {
-                  "@type": "Offer",
-                  "price": "120",
-                  "priceCurrency": "INR"
-                }
-              },
-              {
-                "@type": "MenuItem",
-                "name": "Lychee Sunset",
+                "name": "Bacon Strips",
                 "offers": {
                   "@type": "Offer",
                   "price": "150",
@@ -246,10 +422,28 @@
               },
               {
                 "@type": "MenuItem",
-                "name": "Orange and Mint",
+                "name": "Egg",
                 "offers": {
                   "@type": "Offer",
-                  "price": "150",
+                  "price": "25",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Extra patty",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "100",
+                  "priceCurrency": "INR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Caramelized Onions",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "25",
                   "priceCurrency": "INR"
                 }
               }
@@ -264,21 +458,86 @@
       "url": "https://smashed-zeta.vercel.app/",
       "name": "Smashed Burgers & Co.",
       "inLanguage": "en-IN",
-      "publisher": {"@id": "https://smashed-zeta.vercel.app/#restaurant"}
+      "publisher": {
+        "@id": "https://smashed-zeta.vercel.app/#restaurant"
+      }
     },
     {
       "@type": "FAQPage",
       "@id": "https://smashed-zeta.vercel.app/#faq",
       "mainEntity": [
-        {"@type": "Question", "name": "Where is Smashed Burgers & Co. in Kochi?", "acceptedAnswer": {"@type": "Answer", "text": "64/5257 G, Kathrikadavu, on Kaloor Kadavanthra Road in Kaloor, Kochi, Kerala."}},
-        {"@type": "Question", "name": "What time does Smashed Burgers open and close?", "acceptedAnswer": {"@type": "Answer", "text": "Every day from 6 PM to 4 AM, including weekends."}},
-        {"@type": "Question", "name": "Where can I get a burger late at night in Kochi?", "acceptedAnswer": {"@type": "Answer", "text": "Smashed Burgers & Co. in Kaloor is open until 4 AM every night, and delivers through Zomato during those hours."}},
-        {"@type": "Question", "name": "Does Smashed Burgers deliver?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Order through Zomato, where the restaurant is listed as Smashed Burgers & Co, Kaloor."}},
-        {"@type": "Question", "name": "What is a smash burger?", "acceptedAnswer": {"@type": "Answer", "text": "A ball of beef pressed flat onto a very hot flat-top griddle. The press gives the patty a thin, crisp, dark crust with lacy edges, which a thick grilled patty can't get."}},
-        {"@type": "Question", "name": "What is the Animal Smash?", "acceptedAnswer": {"@type": "Answer", "text": "Two smashed beef patties with signature animal sauce, double melted cheese and crisp lettuce. It's the house take on the California double animal style burger."}},
-        {"@type": "Question", "name": "What are tallow fries?", "acceptedAnswer": {"@type": "Answer", "text": "Fat-cut fries cooked in beef tallow instead of vegetable oil, then salted straight out of the fryer. They can also be ordered loaded with cheese sauce and smashed beef."}},
-        {"@type": "Question", "name": "Is there anything other than beef?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Nashville Fried Chicken burger has crispy fried chicken, Nashville hot spice, pickles and house sauce."}},
-        {"@type": "Question", "name": "How much does a meal cost?", "acceptedAnswer": {"@type": "Answer", "text": "Burgers run from ₹179 for a single OG Smash to ₹450 for the Ranch Reserve. Tallow Fries are ₹200 and mocktails ₹120 to ₹150. Delivery prices on Zomato can differ."}}
+        {
+          "@type": "Question",
+          "name": "Where is Smashed Burgers & Co. in Kochi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fes & Fred Eco Space, Thammanam-Pullepady Road, Kathrikadavu, Kaloor, Kochi. Call 79078 94764."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What time does Smashed Burgers open and close?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every day from 6 PM to 4 AM, including weekends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I get a burger late at night in Kochi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Smashed Burgers & Co. in Kaloor is open until 4 AM every night, and delivers through Zomato during those hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Smashed Burgers deliver?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Order through Zomato, where the restaurant is listed as Smashed Burgers & Co, Kaloor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a smash burger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A ball of beef pressed flat onto a very hot flat-top griddle. The press gives the patty a thin, crisp, dark crust with lacy edges, which a thick grilled patty can't get."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Animal Smash?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two smashed beef patties with signature animal sauce, double melted cheese and crisp lettuce. It's the house take on the California double animal style burger."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are tallow fries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fat-cut fries cooked in beef tallow instead of vegetable oil, then salted straight out of the fryer. They can also be ordered loaded with cheese sauce and smashed beef."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there anything other than beef?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Nashville Fried Chicken burger has crispy fried chicken, Nashville hot spice, pickles and house sauce."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a meal cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Burgers run from ₹299 for the OG Smash to ₹529 for the Ranch Reserve, priced as doubles. A single-patty OG Smash is ₹199. Tallow Fries are ₹199. Delivery prices on Zomato can differ."
+          }
+        }
       ]
     }
   ]
@@ -520,6 +779,13 @@ footer .base{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 .menu .cols{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,96px);align-items:start}
 .menu .side{position:sticky;top:120px}
 .menu .legend{margin:22px 0 28px;color:var(--muted)}
+.menu-actions{display:flex;flex-wrap:wrap;gap:12px}
+.mi.out h4,.mi.out .price{opacity:.4}
+.mi.out .dots{opacity:.4}
+.soldout{display:inline-block;margin-top:6px;padding:3px 8px;border-radius:999px;border:1px solid rgba(243,234,215,.25);color:var(--muted);font-size:10px}
+.live-note{margin-top:14px;color:var(--muted);font-size:11px;min-height:1em}
+.live-note i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#46d17a;margin-right:8px;vertical-align:middle}
+.mi .price .from{font-weight:400;color:var(--muted);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
 .star{color:var(--cheese);font-size:.72em;vertical-align:.18em;margin-left:.15em}
 .mcat{border-top:1px solid var(--line);padding:30px 0 18px}
 .mcat:last-child{border-bottom:1px solid var(--line)}
@@ -917,46 +1183,31 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
         </article>
         <div class="more reveal">
         <span class="mono" style="color:var(--cheese)">// Also on the menu</span>
-        <span>Tokyo</span><span>Ranch Reserve</span><span>Max Gains</span><span>Mocktails</span>
+        <span>Tokyo</span><span>Ranch Reserve</span><span>Double Smoke</span><span>Patty Melt</span>
         <a class="btn" href="#menu">See the full menu ↓</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Full menu. Source: their menu PDF (Jan 2026), pages 1, 2 and 4.
-       Page 3 of that PDF is a different printed card with other prices, so it is not used.
-       Wings were marked sold out and are left off. Prices here also feed the JSON-LD in <head>. -->
+  <!-- Full menu. Source: their live menu at menu.smashed.in (SmashPOS), read Nov 2026.
+       Stars follow their "Bestseller" tags. Items without a known description show name and price only.
+       Stock changes nightly, so availability is left to the live menu link. Prices also feed the JSON-LD in <head>. -->
   <section id="menu" class="menu" aria-labelledby="menu-title">
     <div class="wrap cols">
       <div class="side">
         <div class="eyebrow mono reveal">// The full menu</div>
         <h2 class="h-xl reveal" id="menu-title">Everything<br>we smash.</h2>
-        <p class="lead reveal" style="margin-top:24px">Prices in rupees from our menu. Delivery prices on Zomato can differ.</p>
-        <p class="legend mono reveal"><span class="star">★</span> House favourite</p>
-        <a class="btn reveal" href="https://www.zomato.com/kochi/smashed-burgers-co-kaloor/order" target="_blank" rel="noopener">Order on Zomato ↗</a>
+        <p class="lead reveal" style="margin-top:24px">Prices in rupees, straight from the kitchen's own system. Stock changes through the night. Delivery prices on Zomato can differ.</p>
+        <p class="legend mono reveal"><span class="star">★</span> Bestseller</p>
+        <p class="live-note mono" id="menuLive" aria-live="polite"></p>
+        <div class="menu-actions reveal">
+          <a class="btn" href="https://www.zomato.com/kochi/smashed-burgers-co-kaloor/order" target="_blank" rel="noopener">Order on Zomato ↗</a>
+          <a class="btn ghost" href="https://menu.smashed.in/" target="_blank" rel="noopener">Live menu ↗</a>
+        </div>
       </div>
       <div class="mlist">
-        <div class="mcat reveal">
-          <div class="mcat-head"><h3>Starters</h3></div>
-          <div class="mrows"><div class="mi"><div class="mi-top"><h4>Tallow Fries <span class="star" aria-label="House favourite">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹200</span></div><p>Fat-cut fries cooked in beef tallow, finished with salt and crushed pepper.</p></div></div>
-        </div>
-        <div class="mcat reveal">
-          <div class="mcat-head"><h3>House special burgers</h3></div>
-          <div class="mrows"><div class="mi"><div class="mi-top"><h4>OG Smash</h4><span class="dots" aria-hidden="true"></span><span class="price">₹179</span></div><p>One smashed beef patty, caramelised, with melted cheddar, house sauce and pickles in a toasted brioche bun.</p><p class="var mono">Single ₹179 / Double ₹249 / Cheeseburger ₹299</p></div><div class="mi"><div class="mi-top"><h4>The Alchemy <span class="star" aria-label="House favourite">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹329</span></div><p>Two smashed patties in signature sauce, melted cheese and caramelised onions. Sweet and tangy.</p></div><div class="mi"><div class="mi-top"><h4>Max Gains</h4><span class="dots" aria-hidden="true"></span><span class="price">₹349</span></div><p>Two smashed patties, a sunny-side-up egg and a cool, tangy yoghurt sauce. The high-protein one.</p></div><div class="mi"><div class="mi-top"><h4>Jammin&#x27; Bacon <span class="star" aria-label="House favourite">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹349</span></div><p>Two smashed patties under smoky beef bacon jam, with cheese, pickles, lettuce and house sauces.</p></div><div class="mi"><div class="mi-top"><h4>Tokyo <span class="star" aria-label="House favourite">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹399</span></div><p>Two smashed patties, melted cheese and mushrooms sautéed in house Tokyo sauce.</p></div><div class="mi"><div class="mi-top"><h4>Ranch Reserve <span class="star" aria-label="House favourite">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹450</span></div><p>Two smashed patties with beef bacon bits, crunchy onion rings and signature ranch sauce.</p></div></div>
-        </div>
-        <div class="mcat reveal">
-          <div class="mcat-head"><h3>Chicken sandos</h3></div>
-          <div class="mrows"><div class="mi"><div class="mi-top"><h4>Nashville Hot Chicken Sando</h4><span class="dots" aria-hidden="true"></span><span class="price">₹249</span></div><p>Fried chicken thigh in Nashville hot spice, crunchy pickles and house sauce on a toasted bun.</p></div></div>
-        </div>
-        <div class="mcat reveal">
-          <div class="mcat-head"><h3>Add-ons</h3><span class="mono">Add to any burger.</span></div>
-          <div class="mgrid"><div class="mi small"><div class="mi-top"><h4>Smashed patty</h4><span class="dots" aria-hidden="true"></span><span class="price">₹80</span></div></div><div class="mi small"><div class="mi-top"><h4>Sunny-side egg</h4><span class="dots" aria-hidden="true"></span><span class="price">₹25</span></div></div><div class="mi small"><div class="mi-top"><h4>Cheese slice</h4><span class="dots" aria-hidden="true"></span><span class="price">₹15</span></div></div><div class="mi small"><div class="mi-top"><h4>Jalapeños</h4><span class="dots" aria-hidden="true"></span><span class="price">₹15</span></div></div></div>
-        </div>
-        <div class="mcat reveal">
-          <div class="mcat-head"><h3>Mocktails</h3></div>
-          <div class="mgrid"><div class="mi small"><div class="mi-top"><h4>Green Apple</h4><span class="dots" aria-hidden="true"></span><span class="price">₹120</span></div></div><div class="mi small"><div class="mi-top"><h4>Citrus Surge</h4><span class="dots" aria-hidden="true"></span><span class="price">₹120</span></div></div><div class="mi small"><div class="mi-top"><h4>Lychee Sunset</h4><span class="dots" aria-hidden="true"></span><span class="price">₹150</span></div></div><div class="mi small"><div class="mi-top"><h4>Orange and Mint</h4><span class="dots" aria-hidden="true"></span><span class="price">₹150</span></div></div></div>
-        </div>
+        <!-- MENU:START --><div class="mcat"><div class="mcat-head"><h3>Starters</h3></div><div class="mrows"><div class="mi"><div class="mi-top"><h4>Tallow Fries <span class="star" aria-label="Bestseller">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹199</span></div><p>Fat-cut fries cooked in beef tallow, finished with salt and crushed pepper.</p></div><div class="mi"><div class="mi-top"><h4>Signature Beef Loaded Fries</h4><span class="dots" aria-hidden="true"></span><span class="price">₹279</span></div><p>Fries under cheese sauce and smashed beef.</p></div><div class="mi out"><div class="mi-top"><h4>Cheese Loaded</h4><span class="dots" aria-hidden="true"></span><span class="price">₹239</span></div><span class="soldout mono">Sold out tonight</span></div></div></div><div class="mcat"><div class="mcat-head"><h3>Classic burgers</h3><span class="mono">Price shown is the double.</span></div><div class="mrows"><div class="mi"><div class="mi-top"><h4>OG Smash</h4><span class="dots" aria-hidden="true"></span><span class="price">₹299</span></div><p>Smashed beef, caramelised, with melted cheddar, house sauce and pickles in a toasted brioche bun.</p><p class="var mono">Single ₹199 / Double ₹299 / Triple ₹399</p></div><div class="mi"><div class="mi-top"><h4>The Alchemy <span class="star" aria-label="Bestseller">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹369</span></div><p>Smashed patties in signature sauce, melted cheese and caramelised onions. Sweet and tangy.</p><p class="var mono">Single ₹269 / Double ₹369 / Triple ₹469</p></div><div class="mi"><div class="mi-top"><h4>Tokyo</h4><span class="dots" aria-hidden="true"></span><span class="price">₹419</span></div><p>Smashed patties, melted cheese and mushrooms sautéed in house Tokyo sauce.</p><p class="var mono">Single ₹319 / Double ₹419 / Triple ₹519</p></div><div class="mi"><div class="mi-top"><h4>Jammin’ Bacon <span class="star" aria-label="Bestseller">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹429</span></div><p>Smashed patties under smoky beef bacon jam, with cheese, pickles, lettuce and house sauces.</p><p class="var mono">Single ₹329 / Double ₹429 / Triple ₹529</p></div><div class="mi"><div class="mi-top"><h4>Animal Smash</h4><span class="dots" aria-hidden="true"></span><span class="price">₹349</span></div><p>Two smashed patties, signature animal sauce, double melted cheese and crisp lettuce. A take on the California double animal style.</p><p class="var mono">Double ₹349 / Triple ₹449</p></div><div class="mi"><div class="mi-top"><h4>Ranch Reserve <span class="star" aria-label="Bestseller">★</span></h4><span class="dots" aria-hidden="true"></span><span class="price">₹529</span></div><p>Smashed patties with beef bacon bits, crunchy onion rings and signature ranch sauce.</p><p class="var mono">Double ₹529 / Triple ₹629</p></div><div class="mi"><div class="mi-top"><h4>Double Smoke</h4><span class="dots" aria-hidden="true"></span><span class="price">₹449</span></div><p class="var mono">Double ₹449 / Triple ₹549</p></div><div class="mi out"><div class="mi-top"><h4>Double Bacon Cheese Burger</h4><span class="dots" aria-hidden="true"></span><span class="price">₹499</span></div><span class="soldout mono">Sold out tonight</span><p class="var mono">Double ₹499 / Triple ₹599</p></div></div></div><div class="mcat"><div class="mcat-head"><h3>Sandos</h3></div><div class="mrows"><div class="mi"><div class="mi-top"><h4>Nashville Hot Chicken Sando</h4><span class="dots" aria-hidden="true"></span><span class="price">₹329</span></div><p>Fried chicken thigh in Nashville hot spice, crunchy pickles and house sauce on a toasted bun.</p></div><div class="mi out"><div class="mi-top"><h4>Patty Melt</h4><span class="dots" aria-hidden="true"></span><span class="price">₹550</span></div><span class="soldout mono">Sold out tonight</span></div></div></div><div class="mcat"><div class="mcat-head"><h3>Imported sodas</h3><span class="mono">Tonight&#x27;s stock.</span></div><div class="mgrid"><div class="mi small"><div class="mi-top"><h4>Pepsi</h4><span class="dots" aria-hidden="true"></span><span class="price">₹150</span></div></div><div class="mi small"><div class="mi-top"><h4>Coca Cola</h4><span class="dots" aria-hidden="true"></span><span class="price">₹150</span></div></div><div class="mi small"><div class="mi-top"><h4>Mirinda Citrus</h4><span class="dots" aria-hidden="true"></span><span class="price">₹195</span></div></div><div class="mi small"><div class="mi-top"><h4>Pepsi Max</h4><span class="dots" aria-hidden="true"></span><span class="price">₹195</span></div></div><div class="mi small"><div class="mi-top"><h4>7Up</h4><span class="dots" aria-hidden="true"></span><span class="price">₹150</span></div></div><div class="mi small"><div class="mi-top"><h4>Fanta Orange</h4><span class="dots" aria-hidden="true"></span><span class="price">₹195</span></div></div><div class="mi small"><div class="mi-top"><h4>Monster mango loco</h4><span class="dots" aria-hidden="true"></span><span class="price">₹195</span></div></div><div class="mi small"><div class="mi-top"><h4>Fanta fruit twist</h4><span class="dots" aria-hidden="true"></span><span class="price">₹195</span></div></div><div class="mi small"><div class="mi-top"><h4>Mirinda Cream soda</h4><span class="dots" aria-hidden="true"></span><span class="price">₹195</span></div></div><div class="mi small"><div class="mi-top"><h4>Mirinda Orange</h4><span class="dots" aria-hidden="true"></span><span class="price">₹195</span></div></div><div class="mi small"><div class="mi-top"><h4>Fanta strawberry and kiwi</h4><span class="dots" aria-hidden="true"></span><span class="price">₹195</span></div></div><div class="mi small"><div class="mi-top"><h4>Coca cola light</h4><span class="dots" aria-hidden="true"></span><span class="price">₹150</span></div></div></div></div><div class="mcat"><div class="mcat-head"><h3>Soft drinks and water</h3><span class="mono">Tonight&#x27;s stock.</span></div><div class="mgrid"><div class="mi small"><div class="mi-top"><h4>Mineral Water</h4><span class="dots" aria-hidden="true"></span><span class="price">₹20</span></div></div><div class="mi small"><div class="mi-top"><h4>Mineral Water Small</h4><span class="dots" aria-hidden="true"></span><span class="price">₹10</span></div></div></div></div><div class="mcat"><div class="mcat-head"><h3>Dips</h3></div><div class="mgrid"><div class="mi small"><div class="mi-top"><h4>Ranch Dip</h4><span class="dots" aria-hidden="true"></span><span class="price">₹25</span></div></div></div></div><div class="mcat"><div class="mcat-head"><h3>Add to any burger</h3></div><div class="mgrid"><div class="mi small"><div class="mi-top"><h4>Cheese</h4><span class="dots" aria-hidden="true"></span><span class="price">₹25</span></div></div><div class="mi small"><div class="mi-top"><h4>Sautéed Mushrooms</h4><span class="dots" aria-hidden="true"></span><span class="price">₹50</span></div></div><div class="mi small"><div class="mi-top"><h4>Jalapeños</h4><span class="dots" aria-hidden="true"></span><span class="price">₹15</span></div></div><div class="mi small"><div class="mi-top"><h4>Bacon Strips</h4><span class="dots" aria-hidden="true"></span><span class="price">₹150</span></div></div><div class="mi small"><div class="mi-top"><h4>Egg</h4><span class="dots" aria-hidden="true"></span><span class="price">₹25</span></div></div><div class="mi small"><div class="mi-top"><h4>Extra patty</h4><span class="dots" aria-hidden="true"></span><span class="price">₹100</span></div></div><div class="mi small"><div class="mi-top"><h4>Caramelized Onions</h4><span class="dots" aria-hidden="true"></span><span class="price">₹25</span></div></div></div></div><!-- MENU:END -->
       </div>
     </div>
   </section>
@@ -1060,7 +1311,7 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
         <p class="lead reveal" style="margin-top:24px">Quick answers before you head over or order in.</p>
       </div>
       <div class="list">
-        <details open><summary><span class="n">01</span>Where is Smashed Burgers &amp; Co. in Kochi?<span class="pm"></span></summary><p class="a">64/5257 G, Kathrikadavu, on Kaloor Kadavanthra Road in Kaloor, Kochi, Kerala.</p></details>
+        <details open><summary><span class="n">01</span>Where is Smashed Burgers &amp; Co. in Kochi?<span class="pm"></span></summary><p class="a">Fes &amp; Fred Eco Space, Thammanam-Pullepady Road, Kathrikadavu, Kaloor, Kochi. Call 79078 94764.</p></details>
         <details><summary><span class="n">02</span>What time does Smashed Burgers open and close?<span class="pm"></span></summary><p class="a">Every day from 6 PM to 4 AM, including weekends.</p></details>
         <details><summary><span class="n">03</span>Where can I get a burger late at night in Kochi?<span class="pm"></span></summary><p class="a">Smashed Burgers &amp; Co. in Kaloor is open until 4 AM every night, and delivers through Zomato during those hours.</p></details>
         <details><summary><span class="n">04</span>Does Smashed Burgers deliver?<span class="pm"></span></summary><p class="a">Yes. Order through Zomato, where the restaurant is listed as Smashed Burgers &amp; Co, Kaloor.</p></details>
@@ -1068,7 +1319,7 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
         <details><summary><span class="n">06</span>What is the Animal Smash?<span class="pm"></span></summary><p class="a">Two smashed beef patties with signature animal sauce, double melted cheese and crisp lettuce. It's the house take on the California double animal style burger.</p></details>
         <details><summary><span class="n">07</span>What are tallow fries?<span class="pm"></span></summary><p class="a">Fat-cut fries cooked in beef tallow instead of vegetable oil, then salted straight out of the fryer. They can also be ordered loaded with cheese sauce and smashed beef.</p></details>
         <details><summary><span class="n">08</span>Is there anything other than beef?<span class="pm"></span></summary><p class="a">Yes. The Nashville Fried Chicken burger has crispy fried chicken, Nashville hot spice, pickles and house sauce.</p></details>
-        <details><summary><span class="n">09</span>How much does a meal cost?<span class="pm"></span></summary><p class="a">Burgers run from ₹179 for a single OG Smash to ₹450 for the Ranch Reserve. Tallow Fries are ₹200 and mocktails ₹120 to ₹150. Delivery prices on Zomato can differ.</p></details>
+        <details><summary><span class="n">09</span>How much does a meal cost?<span class="pm"></span></summary><p class="a">Burgers run from ₹299 for the OG Smash to ₹529 for the Ranch Reserve, priced as doubles. A single-patty OG Smash is ₹199. Tallow Fries are ₹199. Delivery prices on Zomato can differ.</p></details>
       </div>
     </div>
   </section>
@@ -1079,7 +1330,8 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
         <div class="eyebrow mono reveal">// Find us</div>
         <h2 class="h-xl reveal">Come<br>hungry.</h2>
         <dl class="info reveal">
-          <div><dt class="mono">Where</dt><dd>64/5257 G, Kathrikadavu, Kaloor Kadavanthra Road, Kochi</dd></div>
+          <div><dt class="mono">Where</dt><dd>Fes &amp; Fred Eco Space, Thammanam-Pullepady Road, Kathrikadavu, Kaloor, Kochi</dd></div>
+          <div><dt class="mono">Call</dt><dd><a href="tel:+917907894764">79078 94764</a></dd></div>
           <div><dt class="mono">Delivery</dt><dd><a href="https://www.zomato.com/kochi/smashed-burgers-co-kaloor/order" target="_blank" rel="noopener">Zomato, rated 4.5 ↗</a></dd></div>
           <div><dt class="mono">When</dt><dd>Every day, 6 PM to 4 AM</dd></div>
           <div><dt class="mono">Say hi</dt><dd><a href="https://www.instagram.com/smashedburgersandco/" target="_blank" rel="noopener">@smashedburgersandco</a></dd></div>
@@ -1680,6 +1932,66 @@ html.has-cursor .cursor-dot{display:block;position:fixed;left:0;top:0;z-index:96
       b.addEventListener("mouseleave", () => b.style.transform = "");
     });
   }
+
+  /* ---------- live menu from their SmashPOS system (menu.smashed.in) ----------
+     Same rules as build_model() and render() in scripts/sync_menu.py. Change both together.
+     If anything fails, the menu baked into the page (refreshed nightly) stays as it is. */
+  function buildMenu(cats, N) {
+    const norm = n => n.replace(/’/g, "'").replace(/\*/g, "").replace(/\s+/g, " ").trim().toLowerCase();
+    const clean = n => n.replace(/\s*\*+\s*$/, "").trim();
+    const rupees = p => { const v = p / 100; return v === Math.trunc(v) ? String(v) : v.toFixed(2); };
+    const model = [], extras = new Map();
+    for (const cat of cats) {
+      const full = N.fullCategories.includes(cat.name), items = [];
+      for (const p of cat.products) {
+        if (!full && !p.isAvailable) continue;
+        let price = p.basePrice, variants = null;
+        for (const g of p.addonGroups || []) {
+          const gn = g.name.toLowerCase();
+          if (gn.startsWith("patty")) {
+            const d = g.addons.find(a => a.isDefault); price += d ? d.price : 0;
+            if (g.addons.length > 1) variants = g.addons.map(a => `${a.name} ₹${rupees(p.basePrice + a.price)}`).join(" / ");
+          } else if (gn === "extras" && cat.name === "Classic Burgers") {
+            g.addons.forEach(a => { if (!extras.has(a.name)) extras.set(a.name, a.price); });
+          }
+        }
+        items.push({ name: clean(p.name), price: rupees(price), variants, best: !!p.isBestseller, out: !p.isAvailable, desc: N.descriptions[norm(p.name)] || null });
+      }
+      if (items.length) model.push({ key: cat.name, title: N.categoryNames[cat.name] || cat.name, note: N.categoryNotes[cat.name] || null, full, items });
+    }
+    if (extras.size) model.push({ key: "extras", title: N.extrasTitle, note: null, full: false,
+      items: [...extras].map(([n, v]) => ({ name: n, price: rupees(v), variants: null, best: false, out: false, desc: null })) });
+    return model;
+  }
+  function renderMenu(model) {
+    const e = t => String(t).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;" }[c]));
+    return model.map(c => {
+      const rows = c.items.map(it => {
+        let r = `<div class="mi${c.full ? "" : " small"}${it.out ? " out" : ""}"><div class="mi-top"><h4>${e(it.name)}${it.best ? ' <span class="star" aria-label="Bestseller">★</span>' : ""}</h4><span class="dots" aria-hidden="true"></span><span class="price">₹${it.price}</span></div>${it.out ? '<span class="soldout mono">Sold out tonight</span>' : ""}`;
+        if (c.full && it.desc) r += `<p>${e(it.desc)}</p>`;
+        if (c.full && it.variants) r += `<p class="var mono">${e(it.variants)}</p>`;
+        return r + "</div>";
+      }).join("");
+      return `<div class="mcat"><div class="mcat-head"><h3>${e(c.title)}</h3>${c.note ? `<span class="mono">${e(c.note)}</span>` : ""}</div><div class="${c.full ? "mrows" : "mgrid"}">${rows}</div></div>`;
+    }).join("");
+  }
+  (async () => {
+    const box = document.querySelector("#menu .mlist"), note = document.getElementById("menuLive");
+    if (!box) return;
+    const within = (p, ms) => Promise.race([p, new Promise((_, no) => setTimeout(() => no(new Error("timeout")), ms))]);
+    try {
+      const N = await within(fetch("menu-notes.json").then(r => r.json()), 6000);
+      const q = (path, args) => fetch(N.api + "/api/query", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ path, args, format: "json" }) })
+        .then(r => r.json()).then(b => { if (b.status !== "success") throw new Error(path); return b.value; });
+      const rest = await within(q("restaurants:getByPublicPagePath", { path: N.pagePath }), 8000);
+      const model = buildMenu(await within(q("products:listPublic", { restaurantId: rest._id }), 8000), N);
+      if (model.filter(c => c.full).reduce((n, c) => n + c.items.length, 0) < 5) return;
+      box.innerHTML = `<!-- MENU:START -->${renderMenu(model)}<!-- MENU:END -->`;
+      const t = new Intl.DateTimeFormat("en-IN", { timeZone: "Asia/Kolkata", hour: "numeric", minute: "2-digit" }).format(new Date());
+      note.innerHTML = `<i></i>Live from the kitchen, checked ${t}`;
+      window.__menuLive = true;
+    } catch (err) { /* keep the baked-in menu */ }
+  })();
 
   let layoutW = innerWidth;
   function layout() { sizeEmbers(); buildFries(); sizeF(); buildDrip(); sizeReel(); sizeX(); }

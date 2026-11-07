@@ -1,0 +1,44 @@
+# Keeps the menu baked into the site (and what search engines read) in step with
+# their SmashPOS menu at menu.smashed.in. Visitors already get the live menu in the
+# browser; this refreshes the static copy. Commits only when something changed,
+# and Vercel redeploys on that push.
+name: Sync menu
+
+on:
+  schedule:
+    - cron: "30 10 * * *"   # 4:00 PM IST, before opening
+    - cron: "30 18 * * *"   # midnight IST, catches changes made during service
+  workflow_dispatch:         # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-menu
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull the live menu
+        run: python3 scripts/sync_menu.py
+
+      - name: Commit if the menu changed
+        run: |
+          git config user.name "menu-sync"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html llms.txt sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Menu already up to date."
+          else
+            git commit -m "Sync menu from menu.smashed.in"
+            git push
+          fi

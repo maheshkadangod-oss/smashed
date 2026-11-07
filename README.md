@@ -37,8 +37,36 @@ Hours, address and menu appear in three places. Change all three together:
 2. The JSON-LD block in the `<head>` of `index.html` (the FAQ answers there must match the page word for word)
 3. `llms.txt`
 
+## Source of truth
+
+The menu, prices, phone and address come from their own system at https://menu.smashed.in/
+(SmashPOS). That page confirms the hours: 6 PM to 4 AM.
+
+## How the menu stays current
+
+Nobody has to edit prices on the website. Change them in SmashPOS and the site follows.
+
+1. **Live, for visitors.** When someone opens the site, the page reads the menu straight from
+   SmashPOS: prices, new items, bestsellers (★) and "Sold out tonight". If SmashPOS can't be
+   reached, the menu baked into the page stays.
+2. **Twice a day, for Google and AI search.** `.github/workflows/sync-menu.yml` runs
+   `scripts/sync_menu.py` at 4 PM and midnight IST. It rewrites the baked-in menu, the menu
+   and price answer in the structured data, the FAQ price answer and `llms.txt`, and commits
+   only if something changed. Vercel redeploys on that commit.
+   Run it any time: GitHub → Actions → Sync menu → Run workflow.
+
+**Descriptions** don't exist in SmashPOS, so they live in `menu-notes.json`, keyed by item name
+in lower case. New items show name and price until a description is added there. The same file
+holds section names and notes.
+
+The browser (`buildMenu` / `renderMenu` in `index.html`) and the script (`build_model` /
+`render` in `scripts/sync_menu.py`) follow the same rules. Change both together.
+
+GitHub pauses scheduled jobs in a public repo after 60 days with no commits. The job's own
+commits count, but if the menu doesn't change for two months, re-enable it in the Actions tab.
+
 ## Still to confirm with the owner
 
-- Opening time: the poster says 6 PM, Zomato says 5:30 PM. The site says 6 PM.
 - Which poster photos are Jammin' Bacon and The Alchemy.
-- Whether to show prices.
+- Descriptions for Double Smoke, Double Bacon Cheese Burger, Patty Melt and Cheese Loaded
+  (their live menu lists name and price only).

@@ -5,42 +5,72 @@
 ## Facts
 
 - Name: Smashed Burgers & Co. (also written Smashed Burgers Co.)
-- Address: 64/5257 G, Kathrikadavu, Kaloor Kadavanthra Road, Kaloor, Kochi, Kerala, India
-- Hours: every day, 6 PM to 4 AM
+- Address: Fes & Fred Eco Space, Thammanam-Pullepady Road, Kathrikadavu, Kaloor, Kochi, Kerala, India
+- Phone: +91 79078 94764
+- Hours: every day, 6 PM to 4 AM (next day)
 - Delivery: Zomato, listed as "Smashed Burgers & Co, Kaloor"
-- Average cost: about ₹500 for two people, per Zomato
+- Live menu with current stock: https://menu.smashed.in/
 - Instagram: @smashedburgersandco
 - Tagline: "Obsession doesn't take days off"
 
 ## Menu
 
-Prices in Indian rupees from the restaurant's menu. Delivery prices on Zomato can differ.
-House favourites are marked ★.
+Prices in Indian rupees from the restaurant's live menu at https://menu.smashed.in/. Burgers are priced as doubles.
+Stock changes through the night. Delivery prices on Zomato can differ. Bestsellers are marked ★.
 
 ### Starters
-- Tallow Fries ★ (₹200): fat-cut fries cooked in beef tallow, salt and crushed pepper.
+- Tallow Fries ★ (₹199): Fat-cut fries cooked in beef tallow, finished with salt and crushed pepper.
+- Signature Beef Loaded Fries (₹279): Fries under cheese sauce and smashed beef.
+- Cheese Loaded (₹239)
 
-### House special burgers
-- OG Smash (single ₹179, double ₹249, cheeseburger ₹299): smashed beef patty, melted cheddar, house sauce, pickles, toasted brioche bun.
-- The Alchemy ★ (₹329): two smashed patties, signature sauce, melted cheese, caramelised onions.
-- Max Gains (₹349): two smashed patties, sunny-side-up egg, yoghurt sauce. The high-protein option.
-- Jammin' Bacon ★ (₹349): two smashed patties, smoky beef bacon jam, cheese, pickles, lettuce, house sauces.
-- Tokyo ★ (₹399): two smashed patties, melted cheese, mushrooms sautéed in house Tokyo sauce.
-- Ranch Reserve ★ (₹450): two smashed patties, beef bacon bits, onion rings, signature ranch sauce.
-- Animal Smash (on Zomato): two smashed patties, signature animal sauce, double melted cheese, crisp lettuce. A take on the California double animal style.
+### Classic burgers
+- OG Smash (₹299) [Single ₹199 / Double ₹299 / Triple ₹399]: Smashed beef, caramelised, with melted cheddar, house sauce and pickles in a toasted brioche bun.
+- The Alchemy ★ (₹369) [Single ₹269 / Double ₹369 / Triple ₹469]: Smashed patties in signature sauce, melted cheese and caramelised onions. Sweet and tangy.
+- Tokyo (₹419) [Single ₹319 / Double ₹419 / Triple ₹519]: Smashed patties, melted cheese and mushrooms sautéed in house Tokyo sauce.
+- Jammin’ Bacon ★ (₹429) [Single ₹329 / Double ₹429 / Triple ₹529]: Smashed patties under smoky beef bacon jam, with cheese, pickles, lettuce and house sauces.
+- Animal Smash (₹349) [Double ₹349 / Triple ₹449]: Two smashed patties, signature animal sauce, double melted cheese and crisp lettuce. A take on the California double animal style.
+- Ranch Reserve ★ (₹529) [Double ₹529 / Triple ₹629]: Smashed patties with beef bacon bits, crunchy onion rings and signature ranch sauce.
+- Double Smoke (₹449) [Double ₹449 / Triple ₹549]
+- Double Bacon Cheese Burger (₹499) [Double ₹499 / Triple ₹599]
 
-### Chicken
-- Nashville Hot Chicken Sando (₹249): fried chicken thigh, Nashville hot spice, pickles, house sauce, toasted bun.
+### Sandos
+- Nashville Hot Chicken Sando (₹329): Fried chicken thigh in Nashville hot spice, crunchy pickles and house sauce on a toasted bun.
+- Patty Melt (₹550)
 
-### Add-ons (any burger)
-- Smashed patty ₹80, sunny-side egg ₹25, cheese slice ₹15, jalapeños ₹15.
+### Imported sodas
+- Pepsi (₹150)
+- Coca Cola (₹150)
+- Mirinda Citrus (₹195)
+- Pepsi Max (₹195)
+- 7Up (₹150)
+- Fanta Orange (₹195)
+- Monster mango loco (₹195)
+- Fanta fruit twist (₹195)
+- Mirinda Cream soda (₹195)
+- Mirinda Orange (₹195)
+- Fanta strawberry and kiwi (₹195)
+- Coca cola light (₹150)
 
-### Mocktails
-- Green Apple ₹120, Citrus Surge ₹120, Lychee Sunset ₹150, Orange and Mint ₹150.
+### Soft drinks and water
+- Mineral Water (₹20)
+- Mineral Water Small (₹10)
+
+### Dips
+- Ranch Dip (₹25)
+
+### Add to any burger
+- Cheese (₹25)
+- Sautéed Mushrooms (₹50)
+- Jalapeños (₹15)
+- Bacon Strips (₹150)
+- Egg (₹25)
+- Extra patty (₹100)
+- Caramelized Onions (₹25)
 
 ## Links
 
 - [Website](https://smashed-zeta.vercel.app/)
+- [Live menu](https://menu.smashed.in/)
 - [Order on Zomato](https://www.zomato.com/kochi/smashed-burgers-co-kaloor/order)
 - [Instagram](https://www.instagram.com/smashedburgersandco/)
 - [Directions](https://www.google.com/maps/search/?api=1&query=Smashed+Burgers+%26+Co+Kathrikadavu+Kaloor+Kochi)
